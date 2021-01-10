@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block header %}
+
+        {% endblock %}
+</head>
+<body>
+        {% block menu %}
+{% if request.session.user %} 
+    {{request.session.user}}님 안녕하세요. 
+    {% endif %}
+
+        {% endblock %}
+</body>
+</html>
